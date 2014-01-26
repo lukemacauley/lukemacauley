@@ -1,0 +1,116 @@
+html {
+	font-size: 10px;
+}
+
+body {
+	font-family: "myriad-pro",sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.6em; // 1.6em = 16px;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+	-webkit-webkit-transition-duration: 300ms;
+	-moz-webkit-transition-duration: 300ms;
+	-ms-webkit-transition-duration: 300ms;
+	-o-webkit-transition-duration: 300ms;
+	transition-duration: 300ms;
+	&:hover, &:active {
+		color: #777;
+	}
+}
+
+.active {
+	color: #777;
+}
+
+@media (max-width: 700px) {
+    section.collection > article {
+        width: 100%;
+    }
+}
+
+.collection {
+	width: 100%;
+	margin-bottom: 86px;
+	overflow: auto;
+	> article {
+		width: 50%;
+		margin-bottom: -4px;
+	}
+	article {
+    position: relative;
+    display: inline-block;
+    float: left;
+    > section,
+		> section a {
+	    position: absolute;
+	    width: 100%;
+	    height: 100%;
+	    top: 0;
+	    left: 0;
+		}
+		> section {
+    	text-align: center;
+    	-webkit-webkit-transition-duration: 300ms;
+			-moz-webkit-transition-duration: 300ms;
+			-ms-webkit-transition-duration: 300ms;
+			-o-webkit-transition-duration: 300ms;
+			transition-duration: 300ms;
+    	> h1 {
+		    display: none;
+			}
+		}
+		> section a {
+	    z-index: 5;
+	    text-indent: 9999px;
+		}
+		> section:hover {
+    	background: rgba(255,255,255, 0.75);
+    	> h1 {
+				display: block;
+				margin-top: 25%;
+			}
+		}
+		> img {
+    	width: 100%;
+		}
+	}
+}
+
+footer {
+	z-index: 10;
+	background-color: rgba(255,255,255,1);
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	height: 90px;
+	width: 100%;
+	-webkit-box-shadow: 0px -2px 2px rgba(100,100,100,0.15);
+	-moz-box-shadow: 0px -2px 2px rgba(100,100,100,0.15);
+	box-shadow: 0px -2px 2px rgba(100,100,100,0.15);
+	text-align: center;
+	ul {
+		list-style-type: none;
+		-webkit-margin-before: 0em;
+		-webkit-margin-after: 0em;
+		-webkit-margin-start: 0px;
+		-webkit-margin-end: 0px;
+		-webkit-padding-start: 0px;
+		margin-top: 30px;
+		li {
+			display: inline-block;
+			padding-left: 40px;
+			padding-right: 40px;
+			.footer_links {
+				position: relative;
+				bottom: 7px;
+				padding-bottom: 0;
+				text-transform: uppercase;
+				font-size: 1.2em;
+			}
+		}		
+	}
+}
