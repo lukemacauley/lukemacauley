@@ -16,13 +16,13 @@ ready = ->
 	NProgress.configure showSpinner: false
 
 	$("[href]").each ->
-  $(this).addClass "active"  if @href is window.location.href
+  $(this).addClass "active" if @href is window.location.href
 
+  $(".sign_up_link").click ->
+  	$(".full_screen").fadeIn 300
 
-	$(".product_link").hover (->
-  	$(".product_background").css("display" : "block")
-	), ->
-  	$(".product_background").css("display" : "none")
+  $(".close").click ->
+  	$(".full_screen").fadeOut 300
 
 $(document).ready(ready)
 $(document).on('page:load', ready)

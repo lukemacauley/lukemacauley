@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>LUKE MACAULEY</title>
+  <title><%= full_title(yield(:title)) %></title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <script type="text/javascript" src="//use.typekit.net/mpx7zxd.js"></script>
@@ -9,14 +9,15 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<div class="container">
-	
-	<%= yield %>
-
-	<%= render 'layouts/footer' %>
-
-</div>
-
+	<div class="container">
+		<%= render 'layouts/header' %>
+		<%= yield %>
+		<%= render 'layouts/footer' %>
+		<section class="sign_up full_screen">
+			<ul>
+				<li><%= link_to "Close", 'javascript:void(0)', class: "close" %></li>
+			</ul>
+		</section>
+	</div>
 </body>
 </html>
