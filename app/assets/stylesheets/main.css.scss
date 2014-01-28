@@ -41,7 +41,19 @@ a {
 }
 
 .active {
+	-webkit-animation-name: pulse;
+  -moz-animation-name: pulse;
+  -webkit-animation-duration: 2.5s;
+  -moz-animation-duration: 2.5s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-timing-function: ease-in-out;
+  &:hover {
 	color: $hover-color;
+	-webkit-animation-name: 0;
+  -moz-animation-name: 0;
+  }
 }
 
 .collection {
@@ -338,6 +350,11 @@ footer {
 }
 
 @media (max-width: 767px) {
+
+	.close {
+		font-size: 0.8em;
+	}
+
   section.collection > article {
   	width: 100%;
   }
@@ -391,4 +408,37 @@ footer {
 			}
 		}
 	}
+}
+
+// ------ pulse --------------------------------------------------
+
+@-webkit-keyframes pulse {
+  0% { color: $hover-color; }
+  50% { color: rgba(131,131,131,0.5) }
+  100% { color: $hover-color; }
+}
+
+@-moz-keyframes pulse {
+  0% { color: $hover-color; }
+  50% { color: rgba(131,131,131,0.5) }
+  100% { color: $hover-color; }
+}
+
+@-o-keyframes pulse {
+  0% { color: $hover-color; }
+  50% { color: rgba(131,131,131,0.5) }
+  100% { color: $hover-color; }
+}
+
+@keyframes pulse {
+  0% { color: $hover-color; }
+  50% { color: rgba(131,131,131,0.3) }
+  100% { color: $hover-color; }
+}
+
+.pulse {
+  -webkit-animation-name: pulse;
+  -moz-animation-name: pulse;
+  -o-animation-name: pulse;
+  animation-name: pulse;
 }
