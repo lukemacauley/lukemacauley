@@ -12,9 +12,13 @@ Lukemacauley::Application.routes.draw do
   #   get 'products/:id' => 'catalog#view'
 
   get 'about' => 'pages#about'
+  get 'the-brand' => 'pages#the_brand', as: 'thebrand'
   get 'social' => 'pages#social'
   get 'press' => 'pages#press'
   get 'contact' => 'pages#contact'
+  get 'delivery' => 'pages#delivery'
+  get 'returns' => 'pages#returns'
+  get 'legal' => 'pages#legal'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase

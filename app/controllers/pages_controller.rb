@@ -1,4 +1,7 @@
 class PagesController < ApplicationController
+  def the_brand
+  end
+
   def about
   end
 
@@ -9,10 +12,17 @@ class PagesController < ApplicationController
   end
 
   def press
-  	
   end
 
   def contact
-  	
+  end
+
+  def delivery
+  end
+
+  def returns
+  end
+
+  def legal
   end
 end

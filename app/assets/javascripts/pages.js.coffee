@@ -18,7 +18,7 @@ ready = ->
 	$("[href]").each ->
   $(this).addClass "active" if @href is window.location.href
 
-  $(".right li a").click ->
+  $(".right li a, .menu").click ->
   	$(".full_screen").fadeIn 300
 
   $(".close").click ->
