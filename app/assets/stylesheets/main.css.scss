@@ -375,10 +375,14 @@ header {
 
 	.close {
 		font-size: 0.8em;
+		padding: 20px;
+		&:hover {
+			color: #fff;
+		}
 	}
 
 	.collection {
-		margin-bottom: 97px;
+		margin-bottom: 46px;
 		> article {
   		width: 100%;
   		> section {
@@ -472,7 +476,7 @@ header {
 	#mobile_footer {
 		display: block;
 		z-index: 110;
-		background-color: rgba(255,255,255,1);
+		background-color: rgba(255,255,255,0.95);
 		position: fixed;
 		bottom: 0px;
 		left: 0;
