@@ -18,11 +18,19 @@ ready = ->
 	$("[href]").each ->
   $(this).addClass "active" if @href is window.location.href
 
-  $(".right li a, .menu").click ->
+  $(".right li a").click ->
   	$(".full_screen").fadeIn 300
 
+  $(".footer").hover (->
+  	$("#subfooter").slideDown 300
+  	), ->
+  	$('#subfooter').slideUp 300
+
+  $(".menu").click ->
+  	$(".mobile_nav, .mobile_nav_links").fadeIn 300
+
   $(".close").click ->
-  	$(".full_screen").fadeOut 300
+  	$(".full_screen, .mobile_nav").fadeOut 300
 
 $(document).ready(ready)
 $(document).on('page:load', ready)

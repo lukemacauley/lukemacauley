@@ -15,11 +15,7 @@
 		<%= render 'layouts/header' %>
 		<%= yield %>
 		<%= render 'layouts/footer' %>
-		<section class="sign_up full_screen">
-			<ul>
-				<li><%= link_to "Close", 'javascript:void(0)', class: "close" %></li>
-			</ul>
-		</section>
+		<%= render 'layouts/mobile_nav' %>
 	</div>
 </body>
 </html>
