@@ -21,11 +21,6 @@ ready = ->
   $(".right li a").click ->
   	$(".full_screen").fadeIn 300
 
-  $(".footer").hover (->
-  	$("#subfooter").slideDown 300
-  	), ->
-  	$('#subfooter').slideUp 300
-
   $(".menu").click ->
   	$(".mobile_nav, .mobile_nav_links").fadeIn 300
 
