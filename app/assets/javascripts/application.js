@@ -15,3 +15,5 @@
 //= require turbolinks
 //= require_tree .
 //= require nprogress
+//= require imagesloaded
+//= require masonry

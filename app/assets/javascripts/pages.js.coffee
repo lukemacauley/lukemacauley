@@ -27,5 +27,10 @@ ready = ->
   $(".close").click ->
   	$(".full_screen, .mobile_nav").fadeOut 300
 
+  $("#masonry-container").imagesLoaded ->
+    $("#masonry-container").masonry
+      itemSelector: ".item"
+      isFitWidth: true
+
 $(document).ready(ready)
 $(document).on('page:load', ready)

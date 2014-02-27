@@ -1,3 +1,93 @@
+#masonry-container {
+	background-color: #f1f1f1;
+	margin: 20px auto 132px;
+	.item {
+		width: 500px;
+		padding: 20px 20px;
+		img {
+			max-width: 500px;
+			margin: 0;
+		}
+	}
+}
+
+.social {
+	width: 100%;
+	margin-bottom: 112px;
+	overflow: auto;
+	> article {
+		width: 25%;
+		height: auto;
+		margin-bottom: -4px;
+		clear: none;
+		overflow: auto;
+	}
+	article {
+    position: relative;
+    display: inline-block;
+    float: left;
+    overflow: auto;
+    > section,
+		> section a {
+	    position: absolute;
+	    width: 100%;
+	    height: 100%;
+	    top: 0;
+	    left: 0;
+		}
+		> section a {
+	    z-index: 5;
+	    text-indent: 9999px;
+		}
+		> section {
+    	text-align: center;
+    	-webkit-webkit-transition-duration: 300ms;
+			-moz-webkit-transition-duration: 300ms;
+			-ms-webkit-transition-duration: 300ms;
+			-o-webkit-transition-duration: 300ms;
+			transition-duration: 300ms;
+    	> h3 {
+		    display: none;
+			}
+		}
+		> section:hover {
+			display: block;
+    	background: rgba(255,255,255, 0.75);
+    	> h3 {
+				display: block;
+				margin-top: 25%;
+				.text {
+					font-weight: 300;
+				}
+			}
+		}
+		> img {
+    	width: 100%;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // VARIABLES 
 
 $primary-color: #2B2B2B;
@@ -12,7 +102,7 @@ html {
 body {
 	font-family: "proxima-nova",sans-serif;
 	font-style: normal;
-	font-weight: 400;
+	font-weight: 300;
 	font-size: 1.6em; // 1.6em = 16px;
 	background-color: #FFF;
 	color: $primary-color;
@@ -41,7 +131,7 @@ a {
 }
 
 h1 {
-	font-weight: 600;
+	font-weight: 300;
 }
 
 .active {
@@ -93,7 +183,7 @@ h1 {
 				display: block;
 				margin-top: 25%;
 				.price {
-					font-weight: 100;
+					font-weight: 300;
 				}
 			}
 		}
@@ -131,7 +221,7 @@ h1 {
 	p, a {
 		font-size: 1.125em;
 		line-height: 1.5;
-		font-weight: 600;
+		font-weight: 300;
 		text-transform: uppercase;
 	}
 	p > a {
@@ -168,7 +258,7 @@ h1 {
 			.close {
 				text-transform: uppercase;
 				color: #fff;
-				font-weight: 600;
+				font-weight: 300;
 				&:hover {
 					color: $hover-color;
 				}
@@ -201,7 +291,7 @@ h1 {
 				display: none;
 				text-transform: uppercase;
 				color: #fff;
-				font-weight: 600;
+				font-weight: 300;
 				font-size: 14px;
 				padding: 10px;
 			}
@@ -230,14 +320,14 @@ header {
 		top: 0;
 		right: 0;
 		list-style-type: none;
-		background-color: rgba(255,255,255,1);
+		background-color: #ececec;
 		li {
 			padding: 20px 20px 20px 20px;
 			display: inline-block;
 			a {
 				text-transform: uppercase;
 				font-size: 18px;
-				font-weight: 600;
+				font-weight: 300;
 			}
 			&:first-child {
 				padding-left: 40px;
@@ -279,7 +369,7 @@ header {
 				padding-bottom: 0;
 				text-transform: uppercase;
 				font-size: 18px;
-				font-weight: 600;
+				font-weight: 300;
 			}
 			.logo {
 				height: 26px;
@@ -306,7 +396,7 @@ header {
 			font-size: 12px;
 			text-transform: uppercase;
 			a {
-				font-weight: 400;
+				font-weight: 300;
 			}
 		}
 	}
@@ -333,7 +423,7 @@ header {
 				padding: 20px 0;
 				text-transform: uppercase;
 				font-size: 18px;
-				font-weight: 600;
+				font-weight: 300;
 				&:first-child {
 					padding-left: 40px;
 					padding-right: 20px;
@@ -358,7 +448,7 @@ header {
 					margin-bottom: 80px;
 				}
 				.mobile_nav_links {
-					font-weight: 600;
+					font-weight: 300;
 					font-size: 18px;
 					padding: 20px;
 				}
@@ -483,7 +573,7 @@ header {
 				}
 				a {
 					font-size: 0.8em;
-					background-color: rgba(255,255,255,1);
+					background-color: #ececec;
 				}
 			}
 		}
@@ -527,7 +617,7 @@ header {
 			li {
 				font-size: 10px;
 				a {
-					font-weight: 600;
+					font-weight: 300;
 					color: $hover-color;
 					&:hover {
 						color: $hover-color;
@@ -575,7 +665,7 @@ header {
 					margin-bottom: 0px;
 				}
 				.mobile_nav_links {
-					font-weight: 600;
+					font-weight: 300;
 					font-size: 0.8em;
 					padding: 10px;
 				}

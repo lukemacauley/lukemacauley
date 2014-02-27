@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 ruby '2.1.0'
-gem 'rails', '4.0.2'
+gem 'rails', '4.0.3'
 
 group :development do
 	gem 'sqlite3'
@@ -18,6 +18,8 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
+gem 'masonry-rails'
+gem 'jquery-turbolinks'
 
 group :doc do
   gem 'sdoc', require: false
