@@ -12,4 +12,5 @@
  *= require normalize
  *= require_tree .
  *= require nprogress
+ *= require shadowbox
  */

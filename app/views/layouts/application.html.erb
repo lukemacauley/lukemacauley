@@ -14,6 +14,9 @@
 <body>
 	<div class="container">
 		<%= render 'layouts/header' %>
+		<div id="loader-overlay">
+			<div id="loader-spinner"></div>
+		</div>
 		<%= yield %>
 		<%= render 'layouts/footer' %>
 		<%= render 'layouts/mobile_nav' %>

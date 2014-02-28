@@ -1,13 +1,59 @@
 #masonry-container {
-	background-color: #f1f1f1;
-	margin: 20px auto 132px;
+	margin: 20px auto 137px;
+	position: relative;
+	-webkit-animation-duration: 1s;
+	-moz-animation-duration: 1s;
+	-o-animation-duration: 1s;
+	animation-duration: 1s;
 	.item {
+		position: absolute;
+		top: 0;
+		left: 0;
 		width: 500px;
-		padding: 20px 20px;
+		margin: 20px 20px;
+		-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+		-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+		box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
 		img {
 			max-width: 500px;
 			margin: 0;
+			display: block;
+			opacity: 1;
+			-webkit-transition-duration: 500ms;
+			-moz-transition-duration: 500ms;
+			-ms-transition-duration: 500ms;
+			-o-transition-duration: 500ms;
+			transition-duration: 500ms;
+			&:hover {
+				opacity: 0.3;
+			}
 		}
+	}
+}
+
+#loader-overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9000;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0.6;
+	#loader-spinner {
+		position: absolute;
+		z-index: 9001;
+		top: 50%;
+		left: 50%;
+		width: 40px;
+		height: 40px;
+		background-image: url(/assets/spinner-white.png);
+		margin-left: -20px;
+		margin-top: -20px;
+		-webkit-animation: rotation 0.8s infinite linear;
+		-moz-animation: rotation 0.8s infinite linear;
+		animation: rotation 0.8s infinite linear;
 	}
 }
 
@@ -120,11 +166,11 @@ ul {
 a {
 	text-decoration: none;
 	color: $primary-color;
-	-webkit-webkit-transition-duration: 300ms;
-	-moz-webkit-transition-duration: 300ms;
-	-ms-webkit-transition-duration: 300ms;
-	-o-webkit-transition-duration: 300ms;
-	transition-duration: font;
+	-webkit-transition-duration: 500ms;
+	-moz-transition-duration: 500ms;
+	-ms-transition-duration: 500ms;
+	-o-transition-duration: 500ms;
+	transition-duration: 500ms;
 	&:hover {
 		color: $hover-color;
 	}
@@ -320,7 +366,10 @@ header {
 		top: 0;
 		right: 0;
 		list-style-type: none;
-		background-color: #ececec;
+		background-color: #fff;
+		-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+		-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+		box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
 		li {
 			padding: 20px 20px 20px 20px;
 			display: inline-block;
@@ -347,10 +396,10 @@ header {
 	left: 0;
 	height: 90px;
 	width: 100%;
-	border-top: 1px solid #ececec;
-	// -webkit-box-shadow: 0px -2px 2px rgba(0,0,0,0.10);
-	// -moz-box-shadow: 0px -2px 2px rgba(0,0,0,0.10);
-	// box-shadow: 0px -2px 2px rgba(0,0,0,0.10);
+	//border-top: 1px solid #ececec;
+	-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
 	text-align: center;
 	ul {
 		margin-top: 31px;
@@ -385,7 +434,10 @@ header {
 	left: 0;
 	z-index: 110;
 	height: 26px;
-	background-color: #ececec;
+	background-color: #fff;
+	-webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
 	text-align: center;
 	ul {
 		margin-top:2px;
@@ -522,6 +574,23 @@ header {
 }
 
 @media (max-width: 600px) {
+
+	#masonry-container {
+	//background-color: #f1f1f1;
+	margin: 10px auto 60px;
+	.item {
+		width: 280px;
+		margin: 10px 20px;
+		-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+		-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+		box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+		img {
+			max-width: 280px;
+			margin: 0;
+			display: block;
+		}
+	}
+}
 
 	.collection {
 		margin-bottom: 46px;
@@ -672,4 +741,61 @@ header {
 			}
 		}	
 	}
+}
+
+@-webkit-keyframes fadeInUp {
+  0% { opacity: 0; -webkit-transform: translateY(20px); }
+  100% { opacity: 1; -webkit-transform: translateY(0); }
+}
+
+@-moz-keyframes fadeInUp {
+  0% { opacity: 0; -moz-transform: translateY(20px); }
+  100% { opacity: 1; -moz-transform: translateY(0); }
+}
+
+@-o-keyframes fadeInUp {
+  0% { opacity: 0; -o-transform: translateY(20px); }
+  100% { opacity: 1; -o-transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  -moz-animation-name: fadeInUp;
+  -o-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+@-webkit-keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg)
+    }
+
+    to {
+        -webkit-transform: rotate(359deg)
+    }
+}
+
+@-moz-keyframes rotation {
+    from {
+        -moz-transform: rotate(0deg)
+    }
+
+    to {
+        -moz-transform: rotate(359deg)
+    }
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(359deg)
+    }
 }

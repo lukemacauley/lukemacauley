@@ -2,16 +2,13 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
-ready = ->
+$(document).ready ->
 
 	$(document).on "page:fetch", ->
-  NProgress.start()
+    $("#loader-overlay").show()
 
-	$(document).on "page:change", ->
-	  NProgress.done()
-
-	$(document).on "page:restore", ->
-	  NProgress.remove()
+	$(document).on "page:load", ->
+	  $("#loader-overlay").hide()
 
 	NProgress.configure showSpinner: false
 
@@ -32,5 +29,9 @@ ready = ->
       itemSelector: ".item"
       isFitWidth: true
 
-$(document).ready(ready)
-$(document).on('page:load', ready)
+  Shadowbox.init
+    initialHeight: 250
+    initialWidth: 250
+
+# $(document).ready(ready)
+# $(document).on('page:load', ready)
