@@ -12,14 +12,10 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<div class="container">
-		<%= render 'layouts/header' %>
-		<div id="loader-overlay">
-			<div id="loader-spinner"></div>
-		</div>
-		<%= yield %>
-		<%= render 'layouts/footer' %>
-		<%= render 'layouts/mobile_nav' %>
-	</div>
+	<%= render 'layouts/header' %>
+	<div id="loader-overlay"><div id="loader-spinner"></div></div>
+	<%= yield %>
+	<%= render 'layouts/footer' %>
+	<%= render 'layouts/mobile_nav' %>
 </body>
 </html>

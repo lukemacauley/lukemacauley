@@ -1,3 +1,72 @@
+.product-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	.product-leather {
+		position: fixed;
+		bottom: 116px;
+		left: 0;
+		width: 30%;
+		height: 100%;
+		background-color: #fff;
+		img {
+			height: 100%;
+		}
+	}
+	.product-photo {
+		position: fixed;
+		bottom: 116px;
+		left: 30%;
+		max-width: 30%;
+		height: 100%;
+		background-color: #fff;
+		z-index: 20;
+		img {
+			height: 100%;
+		}
+	}
+	.product-details {
+		position: fixed;
+		top: 0;
+		left: 60%;
+		width: 40%;
+		height: 100%;
+		background-color: #f1f1f1;
+		text-transform: uppercase;
+		.name {
+			position: relative;
+			top: 100px;
+			right: 0;
+			width: 60%;
+			margin-left: 40%;
+			text-align: left;
+			font-size: 18px;
+		}
+		.price {
+			position: relative;
+			top: 100px;
+			right: 0;
+			width: 60%;
+			margin-left: 40%;
+			text-align: left;
+			font-size: 16px;
+		}
+		.description {
+			position: relative;
+			top: 130px;
+			right: 0;
+			width: 50%;
+			margin-left: 40%;
+			margin-right: 10%;
+			text-align: left;
+			font-size: 16px;
+		}
+	}
+}
+
 #masonry-container {
 	margin: 20px auto 137px;
 	position: relative;
@@ -16,8 +85,8 @@
 		box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
 		img {
 			max-width: 500px;
-			margin: 0;
 			display: block;
+			margin: 0 auto;
 			opacity: 1;
 			-webkit-transition-duration: 500ms;
 			-moz-transition-duration: 500ms;
@@ -27,6 +96,67 @@
 			&:hover {
 				opacity: 0.3;
 			}
+		}
+	}
+}
+
+#collection-container {
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	margin-bottom: 117px;
+	position: relative;
+	-webkit-animation-duration: 1s;
+	-moz-animation-duration: 1s;
+	-o-animation-duration: 1s;
+	animation-duration: 1s;
+	overflow: hidden;
+	.product {
+		position: relative;
+		max-width: 33.3333333%;
+		height: auto;
+		float: left;
+		//margin: 20px 2%;
+		// -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+		// -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+		// box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+		text-align: center;
+		img {
+			max-width: 100%;
+			display: block;
+			margin: 0 auto;
+			opacity: 1;
+			-webkit-transition-duration: 500ms;
+			-moz-transition-duration: 500ms;
+			-ms-transition-duration: 500ms;
+			-o-transition-duration: 500ms;
+			transition-duration: 500ms;
+			&:hover {
+				opacity: 0.3;
+			}
+		}
+		.name, .price {
+			display: none;
+			font-size: 24px;
+			color: #2b2b2b;
+			font-weight: 300;
+			text-transform: uppercase;
+		}
+		img:hover ~ .name {
+			position: absolute;
+			bottom: 45%;
+			width: 80%;
+			margin: 0 10%;
+			display: block;
+			z-index: 100;
+		}
+		img:hover ~ .price {
+			position: absolute;
+			bottom: 40%;
+			width: 70%;
+			margin: 0 15%;
+			display: block;
+			z-index: 100;
 		}
 	}
 }
@@ -241,7 +371,11 @@ h1 {
 
 .pages {
 	max-width: 550px;
-	margin: 100px auto 190px;
+	margin: 40px auto 190px;
+	-webkit-animation-duration: 1s;
+	-moz-animation-duration: 1s;
+	-o-animation-duration: 1s;
+	animation-duration: 1s;
 	p, a {
 		font-size: 16px;
 		line-height: 1.5;
@@ -321,7 +455,7 @@ h1 {
 	width: 100%;
 	height: 100%;
 	background-color: rgba(0,0,0,0.9);
-	z-index: 100;
+	z-index: 900;
 	display: none;
 	ul {
 		width: 100%;
@@ -543,13 +677,15 @@ header {
 	#mobile_footer {
 		display: block;
 		z-index: 110;
-		background-color: rgba(255,255,255,1);
 		position: fixed;
 		bottom: 0px;
 		left: 0;
 		height: 80px;
 		width: 100%;
-		border-top: 1px solid #ececec;
+		background-color: #fff;
+		-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+		-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+		box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
 		text-align: center;
 		.logo {
 			height: 24px;
@@ -642,7 +778,10 @@ header {
 				}
 				a {
 					font-size: 0.8em;
-					background-color: #ececec;
+					background-color: #fff;
+					-webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+					-moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+					box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
 				}
 			}
 		}
@@ -699,13 +838,16 @@ header {
 		#mobile_footer {
 		display: block;
 		z-index: 110;
-		background-color: rgba(255,255,255,1);
+		background-color: #fff;
+		-webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+		-moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+		box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
 		position: fixed;
 		bottom: 0px;
 		left: 0;
 		height: 50px;
 		width: 100%;
-		border-top: 1px solid #ececec;
+		//border-top: 1px solid #ececec;
 		text-align: center;
 		.logo {
 			height: 14px;
