@@ -5,15 +5,29 @@
 	width: 100%;
 	height: 100%;
 	background-color: #fff;
-	.product-leather {
+	.product-selection {
 		position: fixed;
 		bottom: 116px;
 		left: 0;
 		width: 30%;
 		height: 100%;
 		background-color: #fff;
+		overflow-y: scroll;
 		img {
-			height: 100%;
+			max-width: 50%;
+			float: left;
+			-webkit-transition-duration: 500ms;
+			-moz-transition-duration: 500ms;
+			-ms-transition-duration: 500ms;
+			-o-transition-duration: 500ms;
+			transition-duration: 500ms;
+			&:first-child, &:nth-child(2) {
+				margin-top: 116px;
+			}
+			&:hover {
+				opacity: 0.3;
+				cursor: pointer;
+			}
 		}
 	}
 	.product-photo {
@@ -31,38 +45,69 @@
 	.product-details {
 		position: fixed;
 		top: 0;
-		left: 60%;
-		width: 40%;
+		left: 70%;
+		width: 30%;
 		height: 100%;
-		background-color: #f1f1f1;
+		background-color: #fff;
 		text-transform: uppercase;
+		z-index: 30;
 		.name {
 			position: relative;
-			top: 100px;
+			top: 105px;
 			right: 0;
 			width: 60%;
-			margin-left: 40%;
+			margin-left: 10%;
 			text-align: left;
 			font-size: 18px;
 		}
 		.price {
 			position: relative;
-			top: 100px;
+			top: 105px;
 			right: 0;
 			width: 60%;
-			margin-left: 40%;
+			margin-left: 10%;
 			text-align: left;
 			font-size: 16px;
 		}
 		.description {
 			position: relative;
-			top: 130px;
+			top: 135px;
 			right: 0;
-			width: 50%;
-			margin-left: 40%;
+			width: 80%;
+			margin-left: 10%;
 			margin-right: 10%;
 			text-align: left;
 			font-size: 16px;
+		}
+		button.add-to-bag {
+			position: relative;
+			top: 185px;
+			right: 0;
+			margin-left: 10%;
+			text-align: center;
+			padding: 12px 60px;
+			background-color: #FFF;
+			border: none;
+			-webkit-transition-duration: 300ms;
+			-moz-transition-duration: 300ms;
+			-ms-transition-duration: 300ms;
+			-o-transition-duration: 300ms;
+			transition-duration: 300ms;
+			-webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+			-moz-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+			box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+			text-transform: uppercase;
+			font-weight: 300;
+			&:hover {
+				-webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+				-moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+				box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+			}
+			&:active {
+				-webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+				-moz-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+				box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+			}
 		}
 	}
 }
@@ -80,9 +125,9 @@
 		left: 0;
 		width: 500px;
 		margin: 20px 20px;
-		-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-		-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-		box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+		-webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+		-moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+		box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
 		img {
 			max-width: 500px;
 			display: block;
@@ -282,6 +327,7 @@ body {
 	font-size: 1.6em; // 1.6em = 16px;
 	background-color: #FFF;
 	color: $primary-color;
+	-webkit-font-smoothing: subpixel-antialiased;
 }
 
 ul {
