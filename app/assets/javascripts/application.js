@@ -18,4 +18,6 @@
 //= require imagesloaded
 //= require masonry
 //= require shadowbox
+//= require blur
+//= require verticalalign
 //= require turbolinks
