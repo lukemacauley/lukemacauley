@@ -53,15 +53,15 @@ $(document).ready ->
 
   $(".item").slice(1).mouseenter ->
     $(this).find("img").css("-webkit-filter" : "blur(4px)")
-    $(this).find(".item-overlay").fadeIn(500)
-    $(this).find(".item-overlay").css("background-color" : "rgba(0,0,0,0.5)")
-    $(this).find(".social-text").fadeIn(500)
+    $(this).find(".item-overlay").show()
+    $(this).find(".item-overlay").css("background-color" : "rgba(255,255,255,0.6)")
+    $(this).find(".social-text").show()
 
   $(".item").mouseleave ->
     $(this).find("img").css("-webkit-filter" : "blur(0px)")
-    $(this).find(".item-overlay").fadeOut(500)
+    $(this).find(".item-overlay").hide()
     $(this).find(".item-overlay").css("background-color" : "rgba(0,0,0,0)")
-    $(this).find(".social-text").fadeOut(500)
+    $(this).find(".social-text").hide()
 
   $(".social-text, .product-text").flexVerticalCenter()
 

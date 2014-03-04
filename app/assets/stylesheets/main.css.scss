@@ -20,11 +20,11 @@
 		img {
 			max-width: 50%;
 			float: left;
-			-webkit-transition-duration: 500ms;
-			-moz-transition-duration: 500ms;
-			-ms-transition-duration: 500ms;
-			-o-transition-duration: 500ms;
-			transition-duration: 500ms;
+			// -webkit-transition-duration: 500ms;
+			// -moz-transition-duration: 500ms;
+			// -ms-transition-duration: 500ms;
+			// -o-transition-duration: 500ms;
+			// transition-duration: 500ms;
 			&:first-child, &:nth-child(2) {
 				margin-top: 116px;
 			}
@@ -142,16 +142,16 @@
 				width: 100%;
 				top: 0;
 				left: 0;
-				-webkit-transition-duration: 500ms;
-				-moz-transition-duration: 500ms;
-				-ms-transition-duration: 500ms;
-				-o-transition-duration: 500ms;
-				transition-duration: 500ms;
+				// -webkit-transition-duration: 500ms;
+				// -moz-transition-duration: 500ms;
+				// -ms-transition-duration: 500ms;
+				// -o-transition-duration: 500ms;
+				// transition-duration: 500ms;
 				.social-text {
 					display: none;
 					position: absolute;
 					top: 50%;
-					color: #fff;
+					color: #2b2b2b;
 					width: 420px;
 					margin: 0 40px;
 					font-size: 16px;
@@ -164,11 +164,11 @@
 				max-width: 500px;
 				display: block;
 				margin: 0 auto;
-				-webkit-transition-duration: 500ms;
-				-moz-transition-duration: 500ms;
-				-ms-transition-duration: 500ms;
-				-o-transition-duration: 500ms;
-				transition-duration: 500ms;
+				// -webkit-transition-duration: 500ms;
+				// -moz-transition-duration: 500ms;
+				// -ms-transition-duration: 500ms;
+				// -o-transition-duration: 500ms;
+				// transition-duration: 500ms;
 				-webkit-transform-style: preserve-3d;
 	    	-webkit-transform: translateZ(0) scale(1.0, 1.0);
 			}
@@ -192,6 +192,11 @@
 					margin-bottom: 30px;
 					margin-right: 25px;
 					float: left;
+					-webkit-transition-duration: 300ms;
+					-moz-transition-duration: 300ms;
+					-ms-transition-duration: 300ms;
+					-o-transition-duration: 300ms;
+					transition-duration: 300ms;
 				}
 			}
 		}
@@ -211,7 +216,7 @@
 	overflow: hidden;
 	.product {
 		position: relative;
-		max-width: 33.3333333%;
+		max-width: 33.333333333%;
 		height: auto;
 		float: left;
 		text-align: center;
@@ -353,11 +358,11 @@ ul {
 a {
 	text-decoration: none;
 	color: $primary-color;
-	-webkit-transition-duration: 500ms;
-	-moz-transition-duration: 500ms;
-	-ms-transition-duration: 500ms;
-	-o-transition-duration: 500ms;
-	transition-duration: 500ms;
+	-webkit-transition-duration: 300ms;
+	-moz-transition-duration: 300ms;
+	-ms-transition-duration: 300ms;
+	-o-transition-duration: 300ms;
+	transition-duration: 300ms;
 	&:hover {
 		color: $hover-color;
 	}
