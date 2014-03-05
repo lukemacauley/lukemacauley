@@ -7,8 +7,8 @@ $(document).ready ->
 	$(document).on "page:fetch", ->
     $("#loader-overlay").show()
 
-	$(document).on "page:load", ->
-	  $("#loader-overlay").hide()
+  $(document).on "page:receive", ->
+    $("#loader-overlay").hide()
 
 	NProgress.configure showSpinner: false
 
@@ -35,15 +35,9 @@ $(document).ready ->
 
   $(".product").mouseenter ->
     $(this).find("img").css("-webkit-filter" : "blur(2px)")
-    $(this).find(".product-overlay").show()
-    $(this).find(".product-overlay").css("background-color" : "rgba(255,255,255,0.5)")
-    $(this).find(".product-text").show()
 
   $(".product").mouseleave ->
     $(this).find("img").css("-webkit-filter" : "blur(0px)")
-    $(this).find(".product-overlay").hide()
-    $(this).find(".product-overlay").css("background-color" : "rgba(0,0,0,0)")
-    $(this).find(".product-text").hide()
 
   $(".twitter, .instagram, .facebook").mouseenter ->
     $(this).css("-webkit-filter" : "blur(1px)")
@@ -53,15 +47,9 @@ $(document).ready ->
 
   $(".item").slice(1).mouseenter ->
     $(this).find("img").css("-webkit-filter" : "blur(4px)")
-    $(this).find(".item-overlay").show()
-    $(this).find(".item-overlay").css("background-color" : "rgba(255,255,255,0.6)")
-    $(this).find(".social-text").show()
 
   $(".item").mouseleave ->
     $(this).find("img").css("-webkit-filter" : "blur(0px)")
-    $(this).find(".item-overlay").hide()
-    $(this).find(".item-overlay").css("background-color" : "rgba(0,0,0,0)")
-    $(this).find(".social-text").hide()
 
   $(".social-text, .product-text").flexVerticalCenter()
 
