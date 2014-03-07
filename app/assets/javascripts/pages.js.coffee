@@ -53,5 +53,27 @@ $(document).ready ->
 
   $(".social-text, .product-text").flexVerticalCenter()
 
+  $("#slider").find("a.xl-view").click ->
+    $(".xl-container").fadeIn 500
+    y = $(window).scrollTop()
+    $(window).scrollTop y + 13
+
+  $(".xl-container img").click ->
+    $(".xl-container").fadeOut 500
+
+  $("#slider").nivoSlider
+    effect: "fade" # Specify sets like: 'fold,fade,sliceDown'
+    slices: 1, # For slice animations
+    boxCols: 1, # For box animations
+    boxRows: 1, # For box animations
+    animSpeed: 100 # Slide transition speed
+    directionNav: true # Next & Prev navigation
+    controlNav: false # 1,2,3... navigation
+    controlNavThumbs: false # Use thumbnails for Control Nav
+    manualAdvance: true # Force manual transitions
+    prevText: "<" # Prev directionNav text
+    nextText: ">" # Next directionNav text
+    randomStart: false # Start on a random slide
+
 # $(document).ready(ready)
 # $(document).on('page:load', ready)

@@ -20,4 +20,8 @@
 //= require shadowbox
 //= require blur
 //= require verticalalign
+//= require touchwipe
+//= require nivoslider
+//= require bxslider
+//= require tooltipster
 //= require turbolinks
