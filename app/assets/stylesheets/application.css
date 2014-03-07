@@ -11,9 +11,5 @@
  *= require_self
  *= require normalize
  *= require_tree .
- *= require nprogress
- *= require shadowbox
  *= require nivoslider
- *= require bxslider
- *= require tooltipster
  */

@@ -14,14 +14,9 @@
 //= require jquery.turbolinks
 //= require jquery_ujs
 //= require_tree .
-//= require nprogress
 //= require imagesloaded
 //= require masonry
-//= require shadowbox
-//= require blur
 //= require verticalalign
 //= require touchwipe
 //= require nivoslider
-//= require bxslider
-//= require tooltipster
 //= require turbolinks
