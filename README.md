@@ -10,11 +10,11 @@
 
 *prev:*
 * launched my ecommerce agency and became a shopify plus partner (top 1% of vetted agencies)
-* led the v2 relaunch of drinkcann.com (now $50M+ in sales)
+* led the v2 launch of drinkcann.com (now $50m+ in sales)
 * built flagship sites for shopify: ny.shopify.com and la.shopify.com
 * supported billion-dollar brands like detroit pistons with marketing initiatives
 
 *misc:*
-* currently building side project for law firms: socro.ai
+* currently building side project: socro.ai
 * it's a training tool for law firms concerned about ai dependency
-* it uses socratic questioning to help junior lawyers develop lateral thinking in a time when ai is doing a lot of their day-to-day work
+* it uses socratic questioning to help junior lawyers develop lateral thinking in a time when ai is doing most of their day-to-day work
