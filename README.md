@@ -14,7 +14,7 @@
 * built flagship sites for shopify: ny.shopify.com and la.shopify.com
 * supported billion-dollar brands like detroit pistons with marketing initiatives
 
-*misc*
+*misc:*
 * currently building side project for law firms: socro.ai
 * it's a training tool for law firms concerned about ai dependency
 * it uses socratic questioning to help junior lawyers develop lateral thinking in a time when ai is doing a lot of their day-to-day work
