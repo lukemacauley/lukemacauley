@@ -12,7 +12,7 @@
 * launched my ecommerce agency and became a shopify plus partner (top 1% of vetted agencies)
 * led the v2 launch of drinkcann.com (now $50m+ in sales)
 * built flagship sites for shopify: ny.shopify.com and la.shopify.com
-* supported billion-dollar brands like detroit pistons with marketing initiatives
+* built site for shopify + detroit pistons collaboration
 
 *misc:*
 * currently building side project: socro.ai
