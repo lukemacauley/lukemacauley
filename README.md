@@ -1,7 +1,7 @@
 ## **timeline highlights**
 
 *most recent role:*
-* senior engineer at stargaze, nft marketplace processing $45m+ in trading volume
+* senior engineer at stargaze, nft marketplace processing $45m+ in trading volume: stargaze.zone
 * reached feature parity with other marketplaces that have raised $100m+
 * wrote about a third of the codebase (39% frontend, 35% backend) in a team of 6
 * built a transaction system with shared hooks and utilities, could handle 21 marketplace actions (e.g. buy, sell, offer) with generic modals and centralised transaction logic
