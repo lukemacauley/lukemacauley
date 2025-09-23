@@ -15,6 +15,7 @@
 * built site for shopify + detroit pistons collaboration
 
 *misc:*
+* kraken/ai demo walkthrough: [external link to loom](https://www.loom.com/share/3fd7f1d3275a41f8997c9d077c4b827f)
 * currently building side project: socro.ai
 * it's a training tool for law firms concerned about ai dependency
 * it uses socratic questioning to help junior lawyers develop lateral thinking in a time when ai is doing most of their day-to-day work
