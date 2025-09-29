@@ -2,10 +2,11 @@
 
 *most recent role:*
 * senior engineer at stargaze, nft marketplace processing $45m+ in trading volume: stargaze.zone
-* reached feature parity with other marketplaces that have raised $100m+
-* wrote about a third of the codebase (39% frontend, 35% backend) in a team of 6
-* built a transaction system with shared hooks and utilities, could handle 21 marketplace actions (e.g. buy, sell, offer) with generic modals and centralised transaction logic
-* focused on performance in our bff graphql service with field-level query optimisation, conditional api fetching and smart resolver patterns
+* reached feature-parity with other marketplaces that have raised $100m+
+* worked across the stack and wrote about one third of the codebase (39% frontend, 35% backend) on a 6-person team
+* built node.js graphql bff and go rest apis, unifying blockchain and app data behind a scalable api
+* led migration from next.js/graphql to react router/go rest api based on performance
+* we improved hmr by 20x and cut key query latency by 6x
 * scaled app to support 750k+ sales and 3m+ mints across 3.7k+ collections
 
 *prev:*
