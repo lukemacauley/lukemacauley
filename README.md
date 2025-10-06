@@ -2,11 +2,11 @@
 
 *most recent role:*
 * senior engineer at stargaze, nft marketplace processing $45m+ in trading volume: stargaze.zone
-• shipped complete marketplace feature set of bidding, auctions, launchpad and cross-chain support as part of a core team of 6 engineers
-• contributed across the stack using react, node.js, graphql and go
-• architected and led development of a new marketplace (intergaze.xyz) on a separate blockchain,
+* shipped complete marketplace feature set of bidding, auctions, launchpad and cross-chain support as part of a core team of 6 engineers
+* contributed across the stack using react, node.js, graphql and go
+* architected and led development of a new marketplace (intergaze.xyz) on a separate blockchain,
 serving as technical lead from architecture to launch
-• migrated from next.js, graphql and vercel to react router, go rest and cloudflare, achieving 6x
+* migrated from next.js, graphql and vercel to react router, go rest and cloudflare, achieving 6x
 faster API responses, 20x faster rebuilds and significantly lower hosting costs
 
 *prev:*
