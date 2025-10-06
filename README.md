@@ -2,12 +2,12 @@
 
 *most recent role:*
 * senior engineer at stargaze, nft marketplace processing $45m+ in trading volume: stargaze.zone
-* reached feature-parity with other marketplaces that have raised $100m+
-* worked across the stack and wrote about one third of the codebase (39% frontend, 35% backend) on a 6-person team
-* built node.js graphql bff and go rest apis, unifying blockchain and app data behind a scalable api
-* led migration from next.js/graphql to react router/go rest api based on performance
-* we improved hmr by 20x and cut key query latency by 6x
-* scaled app to support 750k+ sales and 3m+ mints across 3.7k+ collections
+• shipped complete marketplace feature set of bidding, auctions, launchpad and cross-chain support as part of a core team of 6 engineers
+• contributed across the stack using react, node.js, graphql and go
+• architected and led development of a new marketplace (intergaze.xyz) on a separate blockchain,
+serving as technical lead from architecture to launch
+• migrated from next.js, graphql and vercel to react router, go rest and cloudflare, achieving 6x
+faster API responses, 20x faster rebuilds and significantly lower hosting costs
 
 *prev:*
 * launched my ecommerce agency and became a shopify plus partner (top 1% of vetted agencies)
